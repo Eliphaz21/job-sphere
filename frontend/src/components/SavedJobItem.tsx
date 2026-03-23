@@ -27,10 +27,9 @@ export const SavedJobItem = ({ job }: SavedJobItemProps) => {
         <div className={`w-14 h-14 rounded-full ${getLogoBg(job.company)} flex items-center justify-center border border-gray-50 p-2.5 shrink-0 overflow-hidden`}>
           {!imgError && job.logo ? (
             <img 
-              src={job.logo.startsWith('http') ? job.logo : `https://${job.logo}`} 
+              src={job.logo.trim().startsWith('http') ? job.logo.trim() : `https://${job.logo.trim()}`} 
               alt={job.company} 
               className="w-full h-full object-cover" 
-              referrerPolicy="no-referrer" 
               onError={() => setImgError(true)}
             />
           ) : (

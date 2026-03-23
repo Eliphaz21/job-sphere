@@ -37,10 +37,9 @@ export const JobCard = ({ job, onClick, onBookmark, onRemove }: JobCardProps) =>
       <div className="w-14 h-14 rounded-xl bg-[#F8F9FB] flex items-center justify-center overflow-hidden border border-gray-100 p-2 shrink-0">
         {!imgError && job.logo ? (
           <img 
-            src={job.logo.startsWith('http') ? job.logo : `https://${job.logo}`} 
+            src={job.logo.trim().startsWith('http') ? job.logo.trim() : `https://${job.logo.trim()}`} 
             alt={job.company} 
             className="w-full h-full object-contain" 
-            referrerPolicy="no-referrer" 
             onError={() => setImgError(true)}
           />
         ) : (

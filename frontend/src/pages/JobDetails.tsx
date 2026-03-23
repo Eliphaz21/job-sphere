@@ -93,10 +93,9 @@ export const JobDetailsPage = ({ job: initialJob, onBack, onApply, user }: JobDe
                 <div className="w-20 h-20 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100 overflow-hidden shrink-0 p-2">
                   {!imgError && job.logo ? (
                      <img 
-                        src={job.logo.startsWith('http') ? job.logo : `https://${job.logo}`} 
+                        src={job.logo.trim().startsWith('http') ? job.logo.trim() : `https://${job.logo.trim()}`} 
                         alt={job.company} 
                         className="w-full h-full object-contain" 
-                        referrerPolicy="no-referrer" 
                         onError={() => setImgError(true)}
                      />
                   ) : (
