@@ -40,7 +40,7 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
       const url = qParams.toString() ? `/jobs/search?${qParams.toString()}` : '/jobs';
       const { data } = await api.get(url);
       setJobs(data);
-      
+
       // Dynamically display up to 2 specifically bookmarked jobs in "Saved Jobs" sidebar
       const bookmarked = data.filter((j: any) => j.isBookMarked);
       setSavedJobsView(bookmarked.slice(0, 2));
@@ -51,7 +51,7 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
 
   useEffect(() => {
     fetchJobs();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters.searchQuery, filters.searchLocation, filters.location, filters.jobTypes]);
 
   const resetFilters = () => {
@@ -125,24 +125,24 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <SidebarFilters 
-            filters={filters} 
-            setFilters={setFilters} 
-            resetFilters={resetFilters} 
+          <SidebarFilters
+            filters={filters}
+            setFilters={setFilters}
+            resetFilters={resetFilters}
           />
 
           <main className="lg:col-span-6">
             <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
               <div className="flex-1 w-full">
-                <SearchBar 
-                  searchQuery={filters.searchQuery} 
-                  searchLocation={filters.searchLocation} 
-                  setFilters={setFilters} 
-                  filters={filters} 
+                <SearchBar
+                  searchQuery={filters.searchQuery}
+                  searchLocation={filters.searchLocation}
+                  setFilters={setFilters}
+                  filters={filters}
                 />
               </div>
               {user && (
-                <button 
+                <button
                   onClick={() => setIsAddJobModalOpen(true)}
                   className="px-8 py-[18px] bg-[#0046D5] text-white font-bold text-sm rounded-2xl hover:bg-blue-700 transition-all shadow-sm shrink-0 w-full md:w-auto"
                 >
@@ -154,11 +154,11 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
             <div className="space-y-2">
               {filteredJobs.length > 0 ? (
                 filteredJobs.map((job) => (
-                  <JobCard 
-                    key={job._id || job.id} 
-                    job={job} 
-                    onClick={() => onJobClick(job)} 
-                    onBookmark={() => wrapToggleBookmark(job)} 
+                  <JobCard
+                    key={job._id || job.id}
+                    job={job}
+                    onClick={() => onJobClick(job)}
+                    onBookmark={() => wrapToggleBookmark(job)}
                     onRemove={user && job.user === user._id ? () => handleRemoveJob(job) : undefined}
                   />
                 ))
@@ -186,11 +186,11 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
           </aside>
         </div>
       </div>
-      
-      <AddJobModal 
-        isOpen={isAddJobModalOpen} 
-        onClose={() => setIsAddJobModalOpen(false)} 
-        onJobAdded={fetchJobs} 
+
+      <AddJobModal
+        isOpen={isAddJobModalOpen}
+        onClose={() => setIsAddJobModalOpen(false)}
+        onJobAdded={fetchJobs}
       />
     </div>
   );
