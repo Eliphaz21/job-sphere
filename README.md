@@ -7,7 +7,7 @@ Job Sphere is a modern, full-stack job application platform designed to connect 
 The project is divided into two main folders:
 - **Frontend**: A highly responsive, modern UI built for job seekers.
 - **Backend**: A secure, scalable RESTful API handling business logic and data persistence.
-## Project Video:
+## Project Video Link:
 
 ---
 
