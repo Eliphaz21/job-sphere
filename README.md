@@ -11,7 +11,7 @@ The project is divided into two main folders:
 
 ##  Live Demo (Click to Watch)
 
-[![Watch Demo](https://img.youtube.com/vi/9rXZsi4k7bM/maxresdefault.jpg)](https://youtu.be/9rXZsi4k7bM)
+[![Watch Demo](assets/honepage.png)](https://youtu.be/9rXZsi4k7bM)
 
 ---
 
