@@ -9,8 +9,13 @@ The project is divided into two main folders:
 - **Backend**: A secure, scalable RESTful API handling business logic and data persistence.
 ## Project Video Link:
    ## 🎥 Project Demo
+<h2 align="center"> Watch Demo</h2>
 
-[![Watch the video](https://img.youtube.com/vi/9rXZsi4k7bM/0.jpg)](https://youtu.be/9rXZsi4k7bM)
+<p align="center">
+  <a href="https://youtu.be/9rXZsi4k7bM">
+    <img src="https://img.youtube.com/vi/9rXZsi4k7bM/maxresdefault.jpg" width="600" alt="Watch Demo"/>
+  </a>
+</p>
 
 ---
 
