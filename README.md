@@ -10,6 +10,7 @@ The project is divided into two main folders:
 ## Project Video Link: https://youtu.be/9rXZsi4k7bM
 
 ##  Live Demo (Click to Watch)
+
 [![Watch Demo](https://img.youtube.com/vi/9rXZsi4k7bM/maxresdefault.jpg)](https://youtu.be/9rXZsi4k7bM)
 
 ---
