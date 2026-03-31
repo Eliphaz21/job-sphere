@@ -11,7 +11,13 @@ The project is divided into two main folders:
 
 ##  Live Demo (Click to Watch)
 
-[![Watch Demo](assets/honepage.png)](https://youtu.be/9rXZsi4k7bM)
+<h2 align="center">🎥 Live Demo</h2>
+
+<p align="center">
+  <a href="https://youtu.be/9rXZsi4k7bM">
+    <img src="frontend/src/assets/honepage.png" width="800" alt="Project Demo"/>
+  </a>
+</p>
 
 ---
 
