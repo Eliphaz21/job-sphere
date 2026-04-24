@@ -2,7 +2,7 @@
 
 Job Sphere is a modern, full-stack job application platform designed to connect job seekers with employers seamlessly. The platform provides robust functionalities for browsing job listings, applying for jobs dynamically, and a complete user authentication system to secure the application process.
 
-##  Project Ov
+##  Project Overview
 
 The project is divided into two main folders:
 - **Frontend**: A highly responsive, modern UI built for job seekers.
