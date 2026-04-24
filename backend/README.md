@@ -1,5 +1,4 @@
 # JobSphere Backend 
-
 A secure, high-performance backend server built with Node.js and Express.js to power the JobSphere platform. The backend manages all data storage, handles user authentication, and serves RESTful API endpoints for jobs and applications.
 
 ## Features
