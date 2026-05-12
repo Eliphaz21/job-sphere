@@ -32,7 +32,6 @@ The frontend is a Single Page Application (SPA) structured with modern web techn
 - **Form Validation**: Immediate feedback on form inputs to ensure data integrity before submission.
 
 ---
-
 ##  Backend Architecture
 
 The backend serves as the foundation of Job Sphere, built to securely process requests, manage authentication, and handle database operations.
