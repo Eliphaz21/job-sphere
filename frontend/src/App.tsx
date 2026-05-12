@@ -258,7 +258,6 @@ export default function App() {
           </motion.div>
         </AnimatePresence>
       </main>
-
       <Footer />
     </div>
   );
