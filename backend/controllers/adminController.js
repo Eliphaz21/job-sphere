@@ -12,6 +12,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
+
 exports.getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id).select('-password');
@@ -21,6 +22,7 @@ exports.getUserById = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
 
 exports.updateUser = async (req, res) => {
   try {
@@ -53,7 +55,7 @@ exports.deleteUser = async (req, res) => {
   }
 };
 
-// ── Applications ───────────────────────────────────────────
+// ── Applications  this accpet applications───────────────────────────────────────────
 exports.getAllApplications = async (req, res) => {
   try {
     const applications = await Application.find({})
